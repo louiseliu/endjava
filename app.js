@@ -30,10 +30,6 @@ app.get('/test',function(req,res)
     
 });
 
-app.get('/course',function(req,res)){
-	res.render('index.jsp');
-}
-
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());

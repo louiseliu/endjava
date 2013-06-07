@@ -4,15 +4,25 @@
         <title>test</title>
 	</head>
 	<body>
-		${pagination.items}
-		<c:forEach items="${pagination.items}" var="t">
-			${t.institution}
-		</c:forEach>
+		<div>
+		</div>
 		
-		<c:if test="${y > 3}">
+		<div>
+			<c:if test="${y > 3}">
 			test
 		</c:if>
+		</div>
 		
-		<br>
+		<div>
+		<c:choose>
+			<c:when test="${y > 3}">
+				dsfjlsdjflkdsfj
+			</c:when>
+			<c:otherwise>
+				dsfiosdfoisdoif
+			</c:otherwise>
+		</c:choose>	
+		</div>
+		
 	</body>
 </html>
