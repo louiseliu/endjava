@@ -18,11 +18,16 @@
 			<c:when test="${y > 3}">
 				dsfjlsdjflkdsfj
 			</c:when>
+			
 			<c:otherwise>
-				dsfiosdfoisdoif
+				rurururuur
 			</c:otherwise>
 		</c:choose>	
+		
 		</div>
+		
+		<%@ include file="test.jsp" %>
+		<%@ include file="temp/index.jsp" %>
 		
 	</body>
 </html>

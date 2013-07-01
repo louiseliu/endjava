@@ -5,8 +5,20 @@
   "scripts": {
     "start": "node app.js"
   },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.0",
+    "grunt-jsbeautifier": "~0.1.5",
+    "grunt-express": "~0.2.0",
+    "grunt-regarde": "~0.1.1"
+  },
   "dependencies": {
-    "express": "3.2.5",
-    "jade": "*"
+    "express": "~3.2.5",
+    "socket.io": "~0.9.13",
+    "grunt-contrib-livereload": "~0.1.2",
+    "consolidate": "~0.8.0",
+    "dustjs-linkedin": "~1.2.1",
+     "jade": "*"
   }
 }
