@@ -4,19 +4,23 @@
         <title>test</title>
 	</head>
 	<body>
-		<div>
-		</div>
+		
+		<c:set var="num" value="${numTest}"></c:set>
+		
+		<div>${num}</div>
+		<div>${num}</div>
+		<div>${num}</div>  
 		
 		<div>
 			<c:if test="${y > 3}">
 			test
-		</c:if>
+			</c:if>
 		</div>
 		
 		<div>
 		<c:choose>
 			<c:when test="${y > 3}">
-				dsfjlsdjflkdsfj
+				dsfjsadsadaadsasadsaddalsdjflkdsfj
 			</c:when>
 			
 			<c:otherwise>

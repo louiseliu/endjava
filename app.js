@@ -20,7 +20,7 @@ app.engine('jsp',require('endskin').__express);
 app.get('/test',function(req,res)
 {
     //now use endskin to parse index.html!  the second parameter is the data object
-    res.render('duobei/swift.jsp',{a:"ewriuweurewoiruewruoi",y:4,items:[1,2,3],
+    res.render('duobei/swift.jsp',{a:"ewriuweurewoiruewruoi",y:4,items:[1,2,3],numTest:5,
     	pagination:{"countTotal":true,"firstPage":true,"hasNextPage":false,"hasPrePage":false,
     	"items":[{"bindMobile":false,"institution":false,"toggleNewConsole":false},
     	{"bindMobile":false,"institution":true,"toggleNewConsole":false}],
