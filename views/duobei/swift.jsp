@@ -4,10 +4,12 @@
 <%@ include file="../include/namespace.jsp" %>   
 <html>
 	<head>
-		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>test</title>
 	</head>
 	<body>
+		<!-- 多写几行注释，
+		多写几行注释 -->
 		
 		<c:set var="num" value="${numTest}"></c:set>
 		
