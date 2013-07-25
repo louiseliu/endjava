@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<!-- 多写几行注释，
-		多写几行注释 -->
+		多写几行注释 --> 
 		
 		<c:set var="num" value="${numTest}"></c:set>
 		
