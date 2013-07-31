@@ -36,10 +36,10 @@ app.get('/test-email',function(req,res)
     res.render('email/invite_email_20130307.jsp',{a:0,b:1,c:3});
 });
 
-app.get('/join-us',function(req,res)
+app.get('/join',function(req,res)
 { 
     //now use endskin to parse index.html!  the second parameter is the data object
-    res.render('WebContent/WEB-INF/jsp/portal/help/join_us.jsp',{});
+    res.render('WebContent/WEB-INF/jsp/portal/help/join_us.jsp',{a:0,b:1,c:3}); 
 });
 
 app.use(express.favicon());
