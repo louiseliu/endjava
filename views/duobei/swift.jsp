@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="../include/taglib.jsp" %>
+<%-- <%@ include file="../include/taglib.jsp" %> --%>
 <%@ include file="../include/namespace.jsp" %>   
 <html>
 	<head>
@@ -8,15 +8,23 @@
         <title>test</title>
 	</head>
 	<body>
-		<!-- 多写几行注释，
-		多写几行注释 --> 
+		<!-- <div>${num}</div>
+		<div>${num}</div> --> 
+		0
+		<!-- 这是一个注释 -->
+		<!-- 这是两个注释 -->
+		
+		<%-- <div>asdsada</div> --%>
+		
+		<%-- <div>${num}</div>
+		<div>${num}</div> --%>
 		
 		<c:set var="num" value="${numTest}"></c:set>
 		
 		<div>${num}</div>
 		<div>${num}</div>
 		<div>${num}</div>  
-		<div>${duobei_domain}</div>
+		<%-- <div>${duobei_domain}</div> --%>
 		
 		<c:set var="name" value="${userInfo.nickname}"></c:set>
 		<div>${name}</div> 

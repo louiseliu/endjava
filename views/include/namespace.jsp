@@ -1,8 +1,6 @@
-<%-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> --%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<!-- 这个是注释 -->
-
-<c:set var="duobei_domain" value="http://www.duobei.com"/>
+<%-- <c:set var="duobei_domain" value="http://www.duobei.com"/>
 <c:set var="duobei_images" value="http://img.duobei.com"/>
 <c:set var="duobei_static" value="http://static.duobei.com"/>
 <c:set var="duobei_styles" value="http://static.duobei.com/styles"/>
@@ -29,5 +27,7 @@
 <c:set var="duobei_client" value="http://dev.duobei.com/duobei-client"/>
 <c:set var="language" value="zh"/>
 <spring:eval expression="@appProperties['page.analysis.debug']" var="pageAnalysisDebug"/>
-<spring:eval expression="@appProperties['resources.version']" var="resourcesVersion"/> 
+<spring:eval expression="@appProperties['resources.version']" var="resourcesVersion"/>  --%>
 
+<c:set var="duobei_styles" value="styles/less"/>
+<c:set var="duobei_javascript" value="javascript"/>
