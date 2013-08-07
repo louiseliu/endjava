@@ -23,7 +23,7 @@
 	
 	<shiro:hasRole name="ROLE_TEACHER">
 		<div class="toggle_console cf">
-			<a class="fr" href="${pageContext.request.contextPath}/" title="去新版控制台">&gt;&nbsp;&nbsp;去新版控制台</a>  
+			<a class="fl" href="${pageContext.request.contextPath}/" title="去新版控制台">&gt;&nbsp;&nbsp;去老板控制台</a>  
 		</div>
 	</shiro:hasRole>  
 	
@@ -34,6 +34,18 @@
 			<div>访客</div>			
 		</c:if>
 	</shiro:guest>  
+	
+	<c:set var="testCset" value="${pageContext.request.contextPath}/123456789"></c:set>
+	<div>${testCset}</div>
+	<a href="${testCset}">test</a>
+	
+	<c:forEach items="${items}" var="item" begin="0" end="1" >
+		<div class="test">${item.aa}</div>
+	</c:forEach>
+	
+	<c:forEach var="item" items="${testItems}" >
+		<div class="test">${item.aa}</div>
+	</c:forEach>
 	
 	<div class="main">
 		<div class="content cf">

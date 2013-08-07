@@ -39,7 +39,7 @@ app.get('/test-email',function(req,res)
 app.get('/help',function(req,res)
 { 
     //now use endskin to parse index.html!  the second parameter is the data object
-    res.render('WEB-INF/jsp/portal/help/help_charge.jsp',{a:0,b:1,c:3}); 
+    res.render('WEB-INF/jsp/portal/help/help_charge.jsp',{a:0,b:1,c:3,"items":[{"aa":10},{"aa":11},{"aa":12}],"testItems":[{"aa":15},{"aa":16},{"aa":17}]}); 
 });
 
 app.use(express.favicon());
