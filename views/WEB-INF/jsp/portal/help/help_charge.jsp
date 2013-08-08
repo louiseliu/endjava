@@ -35,6 +35,8 @@
 		</c:if>
 	</shiro:guest>  
 	
+	<c:forEach begin="0" end="5"><div>就是测试别介意</div></c:forEach> 
+	
 	<c:set var="testCset" value="${pageContext.request.contextPath}/123456789"></c:set>
 	<div>${testCset}</div>
 	<a href="${testCset}">test</a>
