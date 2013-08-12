@@ -15,6 +15,12 @@
 <body id="help_cq" style="padding: 0; margin: 0; height: 100%;">
 	<%@include file="WEB-INF/jsp/portal/include/header.jsp"%>
 	
+	<c:choose>
+		<c:when test="${c > 13}">3cccccccccc</c:when>
+		<c:when test="${c >1}">2ccccccccccc</c:when>
+		<c:when test="${c > 10}">1ccccccccccc</c:when>
+	</c:choose>
+	
 	<shiro:hasAnyRoles name="ROLE_TEACHER,ROLE_USER">
 		<div class="cf">
 			<a class="fl" href="${pageContext.request.contextPath}/" title="去新版控制台">&gt;&nbsp;&nbsp;去新版控制台</a>  
@@ -34,6 +40,20 @@
 			<div>访客</div>			
 		</c:if>
 	</shiro:guest>  
+	
+	<c:if test="${c >2 && d==='this is a just test'}">
+		<div>哈哈呵呵1</div> 
+		<div>哈哈呵呵2</div>
+		<div>哈哈呵呵3</div>			
+	</c:if>
+	
+	<c:if test="${d!= null && d!= ''}">
+		<p>判断不为空1</p>		
+	</c:if>
+	
+	<c:if test="${d}">
+		<p>判断不为空2</p>		
+	</c:if>
 	
 	<c:forEach begin="0" end="5"><div>${c}</div></c:forEach> 
 	
