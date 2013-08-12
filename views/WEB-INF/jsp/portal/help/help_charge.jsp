@@ -17,8 +17,8 @@
 	
 	<c:choose>
 		<c:when test="${c > 13}">3cccccccccc</c:when>
-		<c:when test="${c >1}">2ccccccccccc</c:when>
-		<c:when test="${c > 10}">1ccccccccccc</c:when>
+		<c:when test="${c >1 && d!= null && d!= ''}">2ccccccccccc</c:when>
+		<c:otherwise>1ccccccccccc</c:otherwise>
 	</c:choose>
 	
 	<shiro:hasAnyRoles name="ROLE_TEACHER,ROLE_USER">
